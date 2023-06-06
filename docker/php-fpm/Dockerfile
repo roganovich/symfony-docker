@@ -40,13 +40,13 @@ WORKDIR /var/www
 # Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 ARG BUILD_MODE=dev
-#RUN if [ ${BUILD_MODE} = dev ]; \
-#    then \
-#      composer install --no-interaction; \
-#    else \
-#      composer install --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader; \
-#    fi;
-#RUN chown -R www-data:www-data /var/www/vendor/
+RUN if [ ${BUILD_MODE} = dev ]; \
+    then \
+      composer install --no-interaction; \
+    else \
+      composer install --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader; \
+    fi;
+RUN chown -R www-data:www-data /var/www/vendor/
 
 EXPOSE 8080
 

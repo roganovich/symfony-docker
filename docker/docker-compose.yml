@@ -10,8 +10,9 @@ services:
                 - PUID=${PUID}
                 - PGID=${PGID}
                 - INSTALL_XDEBUG=${INSTALL_XDEBUG}
+                - BUILD_MODE=${BUILD_MODE}
         environment:
-            PHP_IDE_CONFIG: "serverName=Docker"
+            PHP_IDE_CONFIG: "serverName=SymfonyDocker"
         volumes:
             - /var/www/vendor/
             - ./../:/var/www/
