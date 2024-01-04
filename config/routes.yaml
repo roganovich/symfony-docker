@@ -1,0 +1,12 @@
+controllers:
+    resource:
+        path: ../src/Shared/Infrastructure/Controller/
+        namespace: App\Shared\Infrastructure\Controller
+    type: attribute
+
+
+users:
+    resource:
+        path: ../src/Users/Infrastructure/Controller/
+        namespace: App\Users\Infrastructure\Controller
+    type: attribute
