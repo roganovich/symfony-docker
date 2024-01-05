@@ -18,4 +18,7 @@ php bin/console doctrine:migrations:diff
 ```bash
 php bin/console doctrine:migrations:migrate
 ```
-
+## Fixtures
+```bash
+php bin/console doctrine:fixtures:load --env=test
+```

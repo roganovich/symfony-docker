@@ -4,7 +4,7 @@ namespace App\Users\Infrastructure\Adapter;
 
 use App\Skills\Infrastructure\Adapter\SkillsApiInterface;
 
-readonly class SkillsAdapter
+final class SkillsAdapter
 {
     public function __construct(private SkillsApiInterface $api)
     {

@@ -6,7 +6,7 @@ namespace App\Skills\Infrastructure\Api;
 
 use App\Skills\Infrastructure\Adapter\SkillsApiInterface;
 
-final readonly class SkillsApi implements SkillsApiInterface
+final class SkillsApi implements SkillsApiInterface
 {
 
     public function getSkillsForUser(

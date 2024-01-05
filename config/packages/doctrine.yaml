@@ -1,12 +1,12 @@
 doctrine:
     dbal:
+        use_savepoints: true
         driver: pdo_pgsql
         dbname: '%env(DB_NAME)%'
         host: '%env(DB_HOST)%'
         port: '%env(DB_PORT)%'
         user: '%env(DB_USER)%'
         password: '%env(DB_PASSWORD)%'
-
     orm:
         auto_generate_proxy_classes: true
         enable_lazy_ghost_objects: true
