@@ -2,10 +2,10 @@
 
 ## Docker
 ```bash
-docker-compose -f .\docker\docker-compose.yml build
+DOCKER_BUILDKIT=0 docker-compose -f docker/docker-compose.yml build
 ```
 ```bash
-docker-compose -f .\docker\docker-compose.yml up -d
+DOCKER_BUILDKIT=0 docker-compose -f docker/docker-compose.yml up -d
 ```
 ## Doctrine
 ```bash
