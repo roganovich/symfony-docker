@@ -3,12 +3,13 @@
                   xsi:schemaLocation="https://doctrine-project.org/schemas/orm/doctrine-mapping
                           https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="App\Skills\Domain\Entity\Skill" table="users_skills">
+    <entity name="App\Skills\Domain\Entity\SkillUser" table="users_skills">
         <id name="ulid" type="string" length="26">
             <generator strategy="NONE"/>
         </id>
 
-        <field name="name" type="string"/>
+        <field name="user_id" type="string"/>
+        <field name="skill_id" type="string"/>
     </entity>
 
 </doctrine-mapping>
